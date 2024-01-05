@@ -1,5 +1,5 @@
 name: GitHub Actions Demo New
-run-name: ${{ github.actor }} is testing GitHub Actions!
+run-name: ${{ github.actor }} is testing GitHub Actions with new names!
 on: [push]
 jobs:
   Explore-GitHub-Actions:
@@ -17,6 +17,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: sleep 10s
+      - run: sleep 20s
       - run: echo "🍏 This job's status is ${{ job.status }}."
       
